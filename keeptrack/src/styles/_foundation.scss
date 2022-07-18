@@ -1,0 +1,24 @@
+@import '../../node_modules/foundation-sites/scss/foundation.scss';
+ 
+// you can define break-point classes from (small large to small medium)
+$breakpoints-classes:(small medium);
+
+
+
+/*
+  Foundation modules includes (should be defined after settings overwrite section)
+*/
+
+@include foundation-xy-grid-classes(
+    /* options
+    $base-grid: true,
+    $margin-grid: true,
+    $padding-grid: true,
+    $block-grid: true,
+    $collapse: true,
+    $offset: true,
+    $vertical-grid: true,
+    $frame-grid: true
+    */
+  );
+@include foundation-flex-classes;
